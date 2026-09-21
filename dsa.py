@@ -1,13 +1,9 @@
-#count Digit
-n=5643
-while n>0:
-  lastDigit=n%10
-  print(lastDigit)
-  n=n//10
-  
-#Another way
-from math import *
-def countDigit(num):
-  return int(log10(num))+1
-n=countDigit(5687)
-print(n)
+#reverse number
+n=2347
+num=n
+reverse=0
+while num>0:
+  digit=num%10
+  reverse=reverse*10+digit
+  num=num//10
+print(reverse)
